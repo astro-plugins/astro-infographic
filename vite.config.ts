@@ -10,12 +10,11 @@ export default defineConfig({
     },
     rollupOptions: {
       external: [
-        '@antvis/infographic',
-        '@antvis/infographic/ssr',
+        '@antv/infographic',
+        '@antv/infographic/ssr',
         '@types/hast',
         'hast-util-from-html-isomorphic',
         'hast-util-to-text',
-        'unist-util-visit-parents',
         'unified',
         'vfile'
       ]

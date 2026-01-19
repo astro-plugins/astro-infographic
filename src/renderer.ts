@@ -1,4 +1,4 @@
-import { renderToString } from '@antv/infographic/ssr'
+import { renderToString as ssrRenderToString } from '@antv/infographic/ssr'
 import type { InfographicInitOptions } from './types.js'
 
 /**
@@ -13,7 +13,9 @@ export async function renderInfographic(
   options?: Partial<InfographicInitOptions>
 ): Promise<string> {
   try {
-    const svg = await renderToString(spec, options)
+    // Use @antv/infographic's SSR renderer which has its own DOM setup
+    // It uses linkedom to create a lightweight DOM environment
+    const svg = await ssrRenderToString(spec, options)
     return svg
   } catch (error) {
     // Enhance error message with context

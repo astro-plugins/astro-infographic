@@ -4,3 +4,14 @@ dist/
 .DS_Store
 coverage/
 *.local
+.claude
+
+# Debug/test scripts
+debug-*.mjs
+test-*.mjs
+trace-*.mjs
+patch-*.mjs
+
+# Temporary reports
+ISSUE_REPORT.md
+TODO.md
