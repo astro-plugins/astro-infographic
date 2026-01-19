@@ -91,21 +91,21 @@ This will be rendered to an SVG visualization in your built HTML.
 
 ### Basic Infographic
 
-```markdown
-\`\`\`infographic
+````markdown
+```infographic
 infographic list-row-simple-horizontal-arrow
 data
   lists
     - label Planning
     - label Development
     - label Deployment
-\`\`\`
 ```
+````
 
 ### With Icons
 
-```markdown
-\`\`\`infographic
+````markdown
+```infographic
 infographic list-row-horizontal-icon-arrow
 data
   title Project Roadmap
@@ -114,8 +114,8 @@ data
       icon mdi/clipboard
     - label Development
       icon mdi/code-tags
-\`\`\`
 ```
+````
 
 ### Custom Error Handling
 
@@ -150,7 +150,7 @@ rehypeInfographic({
 
 ## 📝 License
 
-MIT © [Your Name]
+MIT © [Jennings Liu](https://github.com/jenningsloy318)
 
 ## 🔗 Links
 
