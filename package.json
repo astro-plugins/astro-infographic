@@ -1,0 +1,68 @@
+{
+  "name": "rehype-infographic",
+  "version": "1.0.0",
+  "description": "A rehype plugin to render @antvis/Infographic diagrams",
+  "type": "module",
+  "main": "./dist/rehype-infographic.js",
+  "module": "./dist/rehype-infographic.js",
+  "types": "./dist/rehype-infographic.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/rehype-infographic.d.ts",
+      "import": "./dist/rehype-infographic.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rehype",
+    "rehype-plugin",
+    "unified",
+    "infographic",
+    "antv",
+    "visualization",
+    "astro",
+    "markdown"
+  ],
+  "dependencies": {
+    "@antv/infographic": "^0.2.8",
+    "@types/hast": "^3.0.0",
+    "hast-util-from-html-isomorphic": "^2.0.0",
+    "hast-util-to-text": "^4.0.0",
+    "unist-util-visit-parents": "^6.0.0",
+    "unified": "^11.0.0",
+    "vfile": "^6.0.0"
+  },
+  "peerDependencies": {
+    "@antv/infographic": "^0.2.8 || ^0.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "prettier": "^3.3.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
