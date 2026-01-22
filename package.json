@@ -24,8 +24,7 @@
     "test:coverage": "vitest --coverage",
     "lint": "eslint src",
     "format": "prettier --write .",
-    "prepublishOnly": "npm run build",
-    "postinstall": "node scripts/patch-infographic.mjs"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "rehype",
@@ -38,7 +37,7 @@
     "markdown"
   ],
   "dependencies": {
-    "@antv/infographic": "^0.2.11",
+    "@antv/infographic": "^0.2.12",
     "@types/hast": "^3.0.0",
     "hast-util-from-html-isomorphic": "^2.0.0",
     "hast-util-to-text": "^4.0.0",
@@ -46,7 +45,7 @@
     "vfile": "^6.0.0"
   },
   "peerDependencies": {
-    "@antv/infographic": "^0.2.11"
+    "@antv/infographic": "^0.2.12"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
